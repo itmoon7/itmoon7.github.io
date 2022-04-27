@@ -1,0 +1,94 @@
+<!-- 
+The place to start looking is index.njk and index.11tydata.js. The index.njk file is a Nunjucks template for the root HTML file, powered by the data from index.11tydata.js. Next, you can take a look at main.scss, which defines the entire styling for the page. It's written in Sass, which extends CSS with some nice features like variables and mixins.
+
+add google scholar, linkedin
+
+if you want to add images :
+<a href="https://www.google.com/">
+<img alt="Qries" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="width:35px;height:35px;"></a>
+
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Intae Moon (He/Him) </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Intae Moon is a PhD student at MIT">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>
+          <td class="bio">
+            <h1 class="name center">Intae Moon</h1>
+            <div class="email center"><a href="mailto:itmoon@mit.edu">itmoon@mit.edu</a></div>
+            <p>Hello! My name is Intae and I'm currently pursuing a PhD in Electrical Engineering and Computer Science at Massachusetts Institute of Technology (MIT). Since Fall 2019, I have been advised by <a href="http://gusevlab.org/">Professor Alexander Gusev</a> at the Dana-Farber Cancer Institute and Harvard Medical School. Before starting my current PhD thesis work, I was advised by Professor David Perreault at MIT Research Laboratory of Electronics (RLE) and worked on electrical energy conversion and control for my master's thesis.</p>
+
+            <p>My PhD research involves developing machine learning based approaches at the intersection of Electronic Health Records (EHR) and genomics data for improving clinical management of patients with cancer. I'm interested in demystifying disease mechanisms as well as prognosis, and ultimately improving clinical decision making.</p>
+
+          
+            <a href="https://www.linkedin.com/in/intaemoon/">LinkedIn</a> / <a href="https://scholar.google.com/citations?user=GftLCq4AAAAJ&hl=en">Google Scholar</a> / <a href="https://github.com/itmoon7/">GitHub</a> / <a href="https://twitter.com/intaemoon">Twitter</a>
+
+          </td>
+          <td class="photo">
+            <img src="assets/profile_intae.png" width="100%" height="100%">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Announcements</h2>
+    4/20/22 : I’m excited to share our work on a new generative, Neural ODE based time-to-event model for longitudinal data with competing risks, SurvLatent ODE. See <a href="https://arxiv.org/abs/2204.09633">here</a> for the pre-print. <br>
+    <h2>Selected Publications</h2>
+    Journal & Conference
+    <ul class="publications">
+      
+        <li class="pub">
+          <p>
+            <span class="pub-title">SurvLatent ODE: A Neural ODE based time-to-event model with competing risks for longitudinal data improves cancer-associated Deep Vein Thrombosis (DVT) prediction</span></p>
+          <p><span class="self-author">Intae Moon</span>, Stefan Groha, and Alexander Gusev</p>
+          <p>arXiv pre-print, <a href=https://arxiv.org/abs/2204.09633>link</a></p>
+        </li>
+      
+        <li class="pub">
+          <p>
+            <span class="pub-title">Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</span></p>
+          <p><span class="self-author">Intae Moon</span>, Sylvan C. Baca, Kenneth L. Keh, and Alexander Gusev</p>
+          <p>Symposium on Artificial Intelligence for Learning Health Systems (SAIL) 2022, <a href=https://sail.health/index.html>link</a></p>
+        </li>
+      
+        <li class="pub">
+          <p>
+            <span class="pub-title">A high-performance 65 w universal ac-dc converter using a variable-inverter-rectifier-transformer with improved step-down capability</span></p>
+          <p><span class="self-author">Intae Moon</span>, Mike K. Ranjram, Sombuddha Chakraborty, and David J. Perreault</p>
+          <p>IEEE Energy Conversion Congress and Exposition (ECCE) 2019, <a href=https://ieeexplore.ieee.org/abstract/document/8912821>link</a></p>
+        </li>
+      
+        <li class="pub">
+          <p>
+            <span class="pub-title">A wide operating range converter using a variable-inverter-rectifier-transformer with improved step-down capability</span></p>
+          <p><span class="self-author">Intae Moon</span>, Mike K. Ranjram, Sombuddha Chakraborty, and David J. Perreault</p>
+          <p>IEEE Applied Power Electronics Conference and Exposition (APEC) 2019, <a href=https://ieeexplore.ieee.org/abstract/document/8721894>link</a></p>
+        </li>
+      
+        <li class="pub">
+          <p>
+            <span class="pub-title">Variable-inverter-rectifier-transformer: A hybrid electronic and magnetic structure enabling adjustable high step-down conversion ratios</span></p>
+          <p>Mike K. Ranjram, <span class="self-author">Intae Moon</span>, and David J. Perreault</p>
+          <p>IEEE Transactions on Power Electronics 2018, <a href=https://ieeexplore.ieee.org/abstract/document/8264814>link</a></p>
+        </li>
+      
+        <li class="pub">
+          <p>
+            <span class="pub-title">Design and implementation of a 1.3 kW, 7-level flying capacitor multilevel AC-DC converter with power factor correction</span></p>
+          <p><span class="self-author">Intae Moon</span>, Carl F Haken, Erik K Saathoff, Ethan Bian, Yutian Lei, Shibin Qin, Derek Chou, Steven Sedig, Won Ho Chung, and Robert CN Pilawa-Podgurski</p>
+          <p>IEEE Applied Power Electronics Conference and Exposition (APEC) 2017, <a href=https://ieeexplore.ieee.org/abstract/document/7930674/>link</a></p>
+        </li>
+      
+    </ul>
+    <h2>Teaching</h2>
+    In Spring 2022, I'm currently teaching <a href="https://mlhcmit.github.io/">6.871 : Machine Learning for Healthcare</a> at MIT as a teaching assistant. I hold a weekly recitation session, mentor students' class projects, and develop problem sets. In Spring 2019, I was a TA for 6.004 : Computation Structures at MIT. I helped design and build new laboratory assignments and course materials in a RISC-V assembly and hardware description language called Bluespec.
+  </body>
+</html>
