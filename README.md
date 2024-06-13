@@ -1,2 +1,2 @@
 ### Intae Moon website
-PhD student at MIT | Dana-Farber Cancer Institute | Research on machine learning for improving healthcare.
+Postdoctoral research fellow at Harvard Medical School | PhD at MIT | Research on machine learning and biomedicine.
