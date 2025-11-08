@@ -204,3 +204,40 @@ h2 { margin-top: 8px; }
     max-width: 340px;
   }
 }
+
+/* Replace the earlier 480px rule with this wider breakpoint */
+@media (max-width: 820px) {
+  /* Make the header nav horizontally scrollable instead of wrapping */
+  .site-header .container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .nav-list {
+    flex-wrap: nowrap;      /* keep in one line */
+    white-space: nowrap;
+    gap: 16px;
+  }
+  .nav-list li { flex: 0 0 auto; }
+  .nav-list::-webkit-scrollbar { display: none; }
+}
+
+/* Optional: slightly smaller nav text on very small phones */
+@media (max-width: 360px) {
+  .nav-list a { font-size: 0.95rem; }
+}
+
+/* Socials: on very small screens show only icons (keeps things uncluttered) */
+@media (max-width: 420px) {
+  .socials .social span {
+    /* visually hide the label but keep it for screen readers */
+    position: absolute !important;
+    height: 1px; width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+/* (Tiny alignment helper for the X icon image) */
+.icon-img { display: block; }
