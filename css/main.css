@@ -167,15 +167,29 @@ h2 { margin-top: 8px; }
   }
 }
 
-/* Inline photos in Outside the lab */
+/* Outside the lab: smaller, consistent thumbnails with rounded corners */
 .event-photo,
 .ski-photo {
   display: block;
   margin-top: 8px;
-  max-width: 520px;   /* keeps images from overflowing text width */
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
+  width: 260px;               /* smaller default size */
+  aspect-ratio: 4 / 3;        /* consistent shape */
+  height: auto;               /* lets aspect-ratio control height */
+  object-fit: cover;          /* crop to fill if photo is larger */
+  border-radius: 14px;        /* smoothed edges */
   box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
 
+/* Tweak spacing on the list if needed */
+.bulleted li {
+  margin-bottom: 14px;
+}
+
+/* On small screens, let thumbs grow but stay tidy */
+@media (max-width: 760px) {
+  .event-photo,
+  .ski-photo {
+    width: 100%;
+    max-width: 340px;
+  }
+}
