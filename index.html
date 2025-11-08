@@ -1,156 +1,288 @@
-<!-- 
-The place to start looking is index.njk and index.11tydata.js. The index.njk file is a Nunjucks template for the root HTML file, powered by the data from index.11tydata.js. Next, you can take a look at main.scss, which defines the entire styling for the page. It's written in Sass, which extends CSS with some nice features like variables and mixins.
-
-add google scholar, linkedin
-
-if you want to add images :
-<a href="https://www.google.com/">
-<img alt="Qries" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" style="width:35px;height:35px;"></a>
-
- -->
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Intae Moon (He/Him) </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Postdoctoral research fellow at Harvard Medical School | PhD at MIT | Research on machine learning and biomedicine.">
+    <meta charset="utf-8" />
+    <title>Intae Moon (He/Him)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Postdoctoral research fellow at Harvard Medical School | PhD at MIT | Research on machine learning and biomedicine."
+    />
     <meta name="google-site-verification" content="KXDZzNJR5dlCKYATzCr0CJRxIx7BxUTM94nEQ311fQc" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body>
-    <table>
-      <tbody>
-        <tr>
-          <td class="bio">
-            <h1 class="name center">Intae Moon</h1>
-            <div class="email center"><a href="mailto:intae_moon@hms.harvard.edu">intae_moon@hms.harvard.edu</a></div>
-            <p>Hello! My name is Intae (pronounced IN-teh) and I'm a postdoctoral research fellow at Harvard Medical School, Department of Biomedical Informatics, advised by <a href="https://zitniklab.hms.harvard.edu/">Professor Marinka Zitnik</a>. I completed my PhD in Electrical Engineering and Computer Science at the Massachusetts Institute of Technology (MIT) in 2024. I was advised by <a href="http://gusevlab.org/">Professor Alexander Gusev</a> at the Dana-Farber Cancer Institute and <a href="https://healthyml.org/marzyeh/">Professor Marzyeh Ghassemi</a> at CSAIL, MIT. For my master's thesis, I was advised by Professor David Perreault at the MIT Research Laboratory of Electronics (RLE), where I worked on electrical energy conversion and control. I received my B.S. in Electrical and Computer Engineering from the University of Illinois, Urbana-Champaign.</p>
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#about">Skip to content</a>
 
-            <p>My research lies at the intersection of medicine and AI, focusing on harnessing the depth of biomedical data to inform evidence-based clinical decision support, while also mitigating potential harms from biased AI algorithms.</p>
-          
-            <a href="assets/Intae_Moon_CV_latest.pdf">CV</a> / <a href="https://www.linkedin.com/in/intaemoon/">LinkedIn</a> / <a href="https://scholar.google.com/citations?user=GftLCq4AAAAJ&hl=en">Google Scholar</a> / <a href="https://github.com/itmoon7/">GitHub</a> / <a href="https://twitter.com/intaemoon">Twitter</a>
+    <!-- Sticky site header / in-page navigation -->
+    <header class="site-header" role="banner">
+      <nav class="container" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#updates">Updates</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching-awards">Teaching &amp; Awards</a></li>
+          <li><a href="#outside">Outside the lab</a></li>
+        </ul>
+      </nav>
+    </header>
 
-          </td>
-          <td class="photo">
-            <img src="assets/profile_intae_v2.png" width="100%">
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <h2>Announcements</h2>
-   <b>6/10/24</b>: I'm excited to announce that I have started my postdoctoral research fellowship at Harvard Medical School, Department of Biomedical Informatics, advised by <a href="https://zitniklab.hms.harvard.edu/">Professor Marinka Zitnik</a>.<br>
-   <b>5/2/24</b>: I'm excited to share that I've successfully defended my PhD thesis, titled "Reliable and Trustworthy AI for Evidence-based Clinical Decision Support in Cancer Care". Check out the presentation recording <a href="https://www.dropbox.com/scl/fi/9a54djfdf448zqxnw9g4v/Intae_Moon_thesis_defense_trimmed.mp4?rlkey=3joxgukasqfbcz1i0iy0gpls2&dl=0">here</a>.<br>
-   <b>11/4/23</b>: I presented our recent work titled "Robust and fair time-to-event framework for predicting cancer-associated Venous Thromboembolism (VTE) using routinely-collected clinical and panel-sequencing data" at <a href="https://www.ashg.org/meetings/2023meeting/">American Society of Human Genetics (ASHG) 2023</a> in Washington DC! See our extended abstract and poster below.<br>
-   <b>8/7/23</b>: I’m excited to share that our work <a href="https://www.nature.com/articles/s41591-023-02482-6">"<i>Machine learning for genetics-based classification and treatment response prediction in cancer of unknown primary</i>"</a> has been published in <i>Nature Medicine</i>!<br>
-   <b>5/9/23</b>: I’m happy to announce that I will be presenting our recent work SurvLatent ODE (see <a href="https://proceedings.mlr.press/v182/moon22a.html">paper</a> and <a href="assets/sail_poster_2023.pdf">poster</a>) as a poster at <a href="https://sail.health/">Symposium on Artificial Intelligence for Learning Health Systems</a> (SAIL) conference in Puerto Rico! <br>
-   <b>12/27/22</b>: I’m excited to share our work "<i>Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</i>". See <a href="https://www.medrxiv.org/content/10.1101/2022.12.22.22283696v1">here</a> for the pre-print. <br>
-   <b>10/25/22</b>: I’m excited to announce that I've been selected as a predoctoral semifinalist for the <a href="https://www.ashg.org/membership/awards/epstein/"><em>2022 Charles J. Epstein Trainee Awards for Excellence in Human Genetics Research</em></a>, presented by the American Society of Human Genetics (ASHG). 60 semifinalist and 18 finalist were chosen among over 700 applicants.<br>
-   <b>6/15/22</b>: I’m excited to share that I won the <a href="https://www.eecs.mit.edu/2022-eecs-awards/"><em>2022 Carlton E. Tucker Award for teaching excellence</em></a>, thanks to the fantastic teaching staff and students of Machine Learning for Healthcare at MIT. All teaching materials are available at this <a href="https://mlhcmit.github.io/2022/index.html">link</a>.<br>
-   <b>5/30/22</b>: I’m excited to announce that I'll be working with <a href="https://health.google/health-research/imaging-and-diagnostics/">Google Health AI team</a> over Summer (full-time) and Fall 2022 (part-time).<br>
-   <b>5/22/22</b>: I’ll be presenting "<i>Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</i>" in the poster session (5/23/22) at Symposium on Artificial Intelligence for Learning Health Systems (SAIL). We'll post the pre-print soon.<br>
-    <b>4/20/22</b>: I’m excited to share our work on a new generative, Neural ODE based time-to-event model for longitudinal data with competing risks, SurvLatent ODE. See <a href="https://arxiv.org/abs/2204.09633">here</a> for the pre-print. <br>
-    <h2>Selected Publications</h2>
-   Please see my <a href="https://scholar.google.com/citations?user=GftLCq4AAAAJ&hl=en"><em>Google Scholar</em></a> page for a full list of my publications.<br>
-    <ul class="publications">
-        <li class="pub">
-          <p>
-            <span class="pub-title">Reliable and Trustworthy AI for Evidence-based Clinical Decision Support in Cancer Care</span>
-          </p>
-          <p><span class="self-author">Intae Moon</span></p>
-          <p>PhD thesis, Massachusetts Institute of Technology, 2024: 
-            <a href="https://dspace.mit.edu/handle/1721.1/156651">[link]</a>
-          </p>
-        </li>
-     
-        <li class="pub">
-          <p>
-            <span class="pub-title">Robust and fair time-to-event framework for predicting cancer-associated Venous Thromboembolism (VTE) using routinely-collected clinical and panel-sequencing data</span></p>
-          <p><span class="self-author">Intae Moon</span>, Hyewon Jeong, Alexander Gusev, and Marzyeh Ghassemi</p>
-         <p>American Society of Human Genetics (ASHG), 2023: <a href="assets/VTE_extended_abstract.pdf">[extended abstract]</a>, <a href="assets/vte_ashg_poster.pdf">[poster]</a></p>
-        </li>
-     
-        <li class="pub">
-          <p>
-            <span class="pub-title">Machine learning for genetics-based classification and treatment response prediction in cancer of unknown primary</span></p>
-          <p><span class="self-author">Intae Moon</span>, Jaclyn LoPiccolo, Sylvan C. Baca, Lynette M. Sholl, Kenneth L. Kehl, Michael J. Hassett,  David Liu,  Deborah Schrag,  and Alexander Gusev</p>
-         <p>Nature Medicine, 2023: <a href=https://www.nature.com/articles/s41591-023-02482-6>[manuscript]</a>, <a href=https://github.com/itmoon7/onconpc/tree/main>[codes]</a></p>
-         <p>Featured on <a href=https://news.mit.edu/2023/ai-model-can-help-determine-where-patients-cancer-arose-0807>MIT News</a> and <a href=https://www.dana-farber.org/newsroom/news-releases/2023/dana-farber-ai-model-predicts-primary-source-of-cancer-using-gene-sequencing-data/>DFCI News</a>!</p>
-         <p>We have also published a <a href=https://www.nature.com/articles/s41591-023-02501-6>Research Briefing</a> in Nature Medicine.</p>
-        </li>
-     
-        <li class="pub">
-          <p>
-            <span class="pub-title">SurvLatent ODE: A Neural ODE based time-to-event model with competing risks for longitudinal data improves cancer-associated Venous Thromboembolism (VTE) prediction</span></p>
-          <p><span class="self-author">Intae Moon</span>, Stefan Groha, and Alexander Gusev</p>
-          <p>Proceedings of Machine Learning Research (PMLR), Machine Learning for Healthcare 2022:</p>
-          <p><a href=https://arxiv.org/abs/2204.09633>[manuscript]</a>, <a href=https://github.com/itmoon7/survlatent_ode>[codes]</a></p>
-        </li>
-      
-        <li class="pub">
-          <p>
-            <span class="pub-title">Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</span></p>
-          <p><span class="self-author">Intae Moon</span>, Sylvan C. Baca, Kenneth L. Kehl, and Alexander Gusev</p>
-         <p> <a href=https://sail.health/index.html>Symposium on Artificial Intelligence for Learning Health Systems</a> (SAIL), 2022: <a href = https://github.com/itmoon7/itmoon7.github.io/raw/main/assets/SAIL_abstract_final.pdf>[abstract]</a></p>
-        </li>
-      
-        <li class="pub">
-          <p>
-            <span class="pub-title">A high-performance 65 w universal ac-dc converter using a variable-inverter-rectifier-transformer with improved step-down capability</span></p>
-          <p><span class="self-author">Intae Moon</span>, Mike K. Ranjram, Sombuddha Chakraborty, and David J. Perreault</p>
-          <p>IEEE Energy Conversion Congress and Exposition (ECCE) 2019: <a href=https://ieeexplore.ieee.org/abstract/document/8912821>[paper link]</a></p>
-        </li>
-      
-        <li class="pub">
-          <p>
-            <span class="pub-title">A wide operating range converter using a variable-inverter-rectifier-transformer with improved step-down capability</span></p>
-          <p><span class="self-author">Intae Moon</span>, Mike K. Ranjram, Sombuddha Chakraborty, and David J. Perreault</p>
-          <p>IEEE Applied Power Electronics Conference and Exposition (APEC) 2019: <a href=https://ieeexplore.ieee.org/abstract/document/8721894>[paper link]</a></p>
-        </li>
-      
-        <li class="pub">
-          <p>
-            <span class="pub-title">Variable-inverter-rectifier-transformer: A hybrid electronic and magnetic structure enabling adjustable high step-down conversion ratios</span></p>
-          <p>Mike K. Ranjram, <span class="self-author">Intae Moon</span>, and David J. Perreault</p>
-          <p>IEEE Transactions on Power Electronics 2018: <a href=https://ieeexplore.ieee.org/abstract/document/8264814>[paper link]</a></p>
-        </li>
-      
-        <li class="pub">
-          <p>
-            <span class="pub-title">Design and implementation of a 1.3 kW, 7-level flying capacitor multilevel AC-DC converter with power factor correction</span></p>
-          <p><span class="self-author">Intae Moon</span>, Carl F Haken, Erik K Saathoff, Ethan Bian, Yutian Lei, Shibin Qin, Derek Chou, Steven Sedig, Won Ho Chung, and Robert CN Pilawa-Podgurski</p>
-          <p>IEEE Applied Power Electronics Conference and Exposition (APEC) 2017: <a href=https://ieeexplore.ieee.org/abstract/document/7930674/>[paper link]</a></p>
-        </li>
-      
-    </ul>
-    <h2>Teaching</h2>
-    <ul>
-    <li>In Spring 2022, I taught <a href="https://mlhcmit.github.io/2022/index.html">6.871 : Machine Learning for Healthcare</a> at MIT as a teaching assistant. I created weekly recitation content and developed Python-based problem sets, in order to improve students' understanding of real-world healthcare applications of machine learning. I also coordinated collaborations between clinical researchers from MIT and Harvard, and students for course projects, and provided mentorship on student projects, leading to notable publications. I received the Carlton E. Tucker Award for Teaching Excellence (overall instructor rating: 6.8/7.0).</li> 
-    <li>In Spring 2019, I was a TA for 6.004 : Computation Structures at MIT. I helped design and build new laboratory assignments and course materials in a RISC-V assembly and hardware description language called Bluespec.</li>
-    </ul>
-    <h2>Awards</h2>
-    <ul>
-      <!-- Charles J. Epstein Award -->
-      <li>
-        <strong>Charles J. Epstein Trainee Awards for Excellence in Human Genetics Research</strong><br>
-        <em>Location:</em> American Society of Human Genetics (ASHG), Los Angeles, CA, August 2022<br>
-        <em>Details:</em> Predoctoral semifinalist; chosen as one of the 60 semi-finalists out of over 700 applicants.
-      </li>
-      
-      <!-- Carlton E. Tucker Award -->
-      <li>
-        <strong>Carlton E. Tucker Award for Teaching Excellence</strong><br>
-        <em>Location:</em> MIT Electrical Engineering and Computer Science, Cambridge, MA, June 2022<br>
-        <em>Details:</em> Annual department teaching award.
-      </li>
-    
-      <!-- Best Innovation Award -->
-      <li>
-        <strong><a href="https://ece.illinois.edu/newsroom/article/19407">Best Innovation Award</a></strong><br>
-        <em>Location:</em> IEEE International Future Energy Challenge, National Taiwan University, Taipei, Taiwan, July 2016<br>
-        <em>Details:</em> Team Leader; led the team of undergraduate students to design and build a successful 1.3 kW power converter for an efficient data center power delivery architecture.
-      </li>
-    </ul>
-   </body>
+    <main>
+      <!-- ABOUT -->
+      <section id="about" class="section container" aria-labelledby="about-title">
+        <div class="hero">
+          <div class="bio">
+            <h1 id="about-title" class="name center">Intae Moon</h1>
+            <div class="email center">
+              <a href="mailto:intae_moon@hms.harvard.edu">intae_moon@hms.harvard.edu</a>
+            </div>
+
+            <p>
+              Hello! My name is Intae (pronounced IN-teh) and I'm a postdoctoral research fellow at Harvard Medical School, Department of Biomedical Informatics, advised by
+              <a href="https://zitniklab.hms.harvard.edu/" target="_blank" rel="noopener noreferrer">Professor Marinka Zitnik</a>.
+              I completed my PhD in Electrical Engineering and Computer Science at the Massachusetts Institute of Technology (MIT) in 2024. I was advised by
+              <a href="http://gusevlab.org/" target="_blank" rel="noopener noreferrer">Professor Alexander Gusev</a> at the Dana-Farber Cancer Institute and
+              <a href="https://healthyml.org/marzyeh/" target="_blank" rel="noopener noreferrer">Professor Marzyeh Ghassemi</a> at CSAIL, MIT. For my master's thesis, I was advised by Professor David Perreault at the MIT Research Laboratory of Electronics (RLE), where I worked on electrical energy conversion and control. I received my B.S. in Electrical and Computer Engineering from the University of Illinois, Urbana-Champaign.
+            </p>
+
+            <p>
+              My research lies at the intersection of medicine and AI, focusing on harnessing the depth of biomedical data to inform evidence-based clinical decision support, while also mitigating potential harms from biased AI algorithms.
+            </p>
+
+            <!-- Social / resource links (text + optional icons) -->
+            <div class="socials center">
+              <a class="social" href="assets/Intae_Moon_CV_latest.pdf">CV</a>
+              <a class="social" href="https://www.linkedin.com/in/intaemoon/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" width="20" height="20" />
+                <span>LinkedIn</span>
+              </a>
+              <a class="social" href="https://scholar.google.com/citations?user=GftLCq4AAAAJ&hl=en" aria-label="Google Scholar" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" width="20" height="20" />
+                <span>Google Scholar</span>
+              </a>
+              <a class="social" href="https://github.com/itmoon7/" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" width="20" height="20" />
+                <span>GitHub</span>
+              </a>
+              <a class="social" href="https://twitter.com/intaemoon" aria-label="Twitter/X" target="_blank" rel="noopener noreferrer">
+                <img alt="" src="https://upload.wikimedia.org/wikipedia/commons/5/53/X_icon_2.svg" width="20" height="20" />
+                <span>Twitter</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="photo">
+            <img
+              src="assets/profile_intae_v2.png"
+              alt="Portrait of Intae Moon"
+              width="240"
+              height="240"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- UPDATES -->
+      <section id="updates" class="section container" aria-labelledby="updates-title">
+        <h2 id="updates-title">Announcements</h2>
+
+        <ul class="updates">
+          <li>
+            <time datetime="2024-06-10"><strong>6/10/24</strong></time>:
+            I'm excited to announce that I have started my postdoctoral research fellowship at Harvard Medical School, Department of Biomedical Informatics, advised by
+            <a href="https://zitniklab.hms.harvard.edu/" target="_blank" rel="noopener noreferrer">Professor Marinka Zitnik</a>.
+          </li>
+          <li>
+            <time datetime="2024-05-02"><strong>5/2/24</strong></time>:
+            I'm excited to share that I've successfully defended my PhD thesis, titled "Reliable and Trustworthy AI for Evidence-based Clinical Decision Support in Cancer Care". Check out the presentation recording
+            <a href="https://www.dropbox.com/scl/fi/9a54djfdf448zqxnw9g4v/Intae_Moon_thesis_defense_trimmed.mp4?rlkey=3joxgukasqfbcz1i0iy0gpls2&dl=0" target="_blank" rel="noopener noreferrer">here</a>.
+          </li>
+          <li>
+            <time datetime="2023-11-04"><strong>11/4/23</strong></time>:
+            I presented our recent work titled "Robust and fair time-to-event framework for predicting cancer-associated Venous Thromboembolism (VTE) using routinely-collected clinical and panel-sequencing data" at
+            <a href="https://www.ashg.org/meetings/2023meeting/" target="_blank" rel="noopener noreferrer">American Society of Human Genetics (ASHG) 2023</a> in Washington DC! See our extended abstract and poster below.
+          </li>
+          <li>
+            <time datetime="2023-08-07"><strong>8/7/23</strong></time>:
+            I’m excited to share that our work
+            <a href="https://www.nature.com/articles/s41591-023-02482-6" target="_blank" rel="noopener noreferrer"><em>Machine learning for genetics-based classification and treatment response prediction in cancer of unknown primary</em></a>
+            has been published in <em>Nature Medicine</em>!
+          </li>
+          <li>
+            <time datetime="2023-05-09"><strong>5/9/23</strong></time>:
+            I’m happy to announce that I will be presenting our recent work SurvLatent ODE (see
+            <a href="https://proceedings.mlr.press/v182/moon22a.html" target="_blank" rel="noopener noreferrer">paper</a> and
+            <a href="assets/sail_poster_2023.pdf" target="_blank" rel="noopener noreferrer">poster</a>) as a poster at
+            <a href="https://sail.health/" target="_blank" rel="noopener noreferrer">Symposium on Artificial Intelligence for Learning Health Systems</a> (SAIL) conference in Puerto Rico!
+          </li>
+          <li>
+            <time datetime="2022-12-27"><strong>12/27/22</strong></time>:
+            I’m excited to share our work "<em>Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</em>". See
+            <a href="https://www.medrxiv.org/content/10.1101/2022.12.22.22283696v1" target="_blank" rel="noopener noreferrer">here</a> for the pre-print.
+          </li>
+          <li>
+            <time datetime="2022-10-25"><strong>10/25/22</strong></time>:
+            I’m excited to announce that I've been selected as a predoctoral semifinalist for the
+            <a href="https://www.ashg.org/membership/awards/epstein/" target="_blank" rel="noopener noreferrer"><em>2022 Charles J. Epstein Trainee Awards for Excellence in Human Genetics Research</em></a>, presented by the American Society of Human Genetics (ASHG). 60 semifinalist and 18 finalist were chosen among over 700 applicants.
+          </li>
+          <li>
+            <time datetime="2022-06-15"><strong>6/15/22</strong></time>:
+            I’m excited to share that I won the
+            <a href="https://www.eecs.mit.edu/2022-eecs-awards/" target="_blank" rel="noopener noreferrer"><em>2022 Carlton E. Tucker Award for teaching excellence</em></a>,
+            thanks to the fantastic teaching staff and students of Machine Learning for Healthcare at MIT. All teaching materials are available at this
+            <a href="https://mlhcmit.github.io/2022/index.html" target="_blank" rel="noopener noreferrer">link</a>.
+          </li>
+          <li>
+            <time datetime="2022-05-30"><strong>5/30/22</strong></time>:
+            I’m excited to announce that I'll be working with
+            <a href="https://health.google/health-research/imaging-and-diagnostics/" target="_blank" rel="noopener noreferrer">Google Health AI team</a> over Summer (full-time) and Fall 2022 (part-time).
+          </li>
+          <li>
+            <time datetime="2022-05-22"><strong>5/22/22</strong></time>:
+            I’ll be presenting "<em>Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</em>" in the poster session (5/23/22) at Symposium on Artificial Intelligence for Learning Health Systems (SAIL). We'll post the pre-print soon.
+          </li>
+          <li>
+            <time datetime="2022-04-20"><strong>4/20/22</strong></time>:
+            I’m excited to share our work on a new generative, Neural ODE based time-to-event model for longitudinal data with competing risks, SurvLatent ODE. See
+            <a href="https://arxiv.org/abs/2204.09633" target="_blank" rel="noopener noreferrer">here</a> for the pre-print.
+          </li>
+        </ul>
+      </section>
+
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section container" aria-labelledby="pubs-title">
+        <h2 id="pubs-title">Selected Publications</h2>
+        <p>
+          Please see my
+          <a href="https://scholar.google.com/citations?user=GftLCq4AAAAJ&hl=en" target="_blank" rel="noopener noreferrer"><em>Google Scholar</em></a>
+          page for a full list of my publications.
+        </p>
+
+        <ul class="publications">
+          <li class="pub">
+            <p><span class="pub-title">Reliable and Trustworthy AI for Evidence-based Clinical Decision Support in Cancer Care</span></p>
+            <p><span class="self-author">Intae Moon</span></p>
+            <p>PhD thesis, Massachusetts Institute of Technology, 2024:
+              <a href="https://dspace.mit.edu/handle/1721.1/156651" target="_blank" rel="noopener noreferrer">[link]</a>
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">Robust and fair time-to-event framework for predicting cancer-associated Venous Thromboembolism (VTE) using routinely-collected clinical and panel-sequencing data</span></p>
+            <p><span class="self-author">Intae Moon</span>, Hyewon Jeong, Alexander Gusev, and Marzyeh Ghassemi</p>
+            <p>American Society of Human Genetics (ASHG), 2023:
+              <a href="assets/VTE_extended_abstract.pdf" target="_blank" rel="noopener noreferrer">[extended abstract]</a>,
+              <a href="assets/vte_ashg_poster.pdf" target="_blank" rel="noopener noreferrer">[poster]</a>
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">Machine learning for genetics-based classification and treatment response prediction in cancer of unknown primary</span></p>
+            <p><span class="self-author">Intae Moon</span>, Jaclyn LoPiccolo, Sylvan C. Baca, Lynette M. Sholl, Kenneth L. Kehl, Michael J. Hassett,  David Liu,  Deborah Schrag,  and Alexander Gusev</p>
+            <p>Nature Medicine, 2023:
+              <a href="https://www.nature.com/articles/s41591-023-02482-6" target="_blank" rel="noopener noreferrer">[manuscript]</a>,
+              <a href="https://github.com/itmoon7/onconpc/tree/main" target="_blank" rel="noopener noreferrer">[codes]</a>
+            </p>
+            <p>Featured on
+              <a href="https://news.mit.edu/2023/ai-model-can-help-determine-where-patients-cancer-arose-0807" target="_blank" rel="noopener noreferrer">MIT News</a> and
+              <a href="https://www.dana-farber.org/newsroom/news-releases/2023/dana-farber-ai-model-predicts-primary-source-of-cancer-using-gene-sequencing-data/" target="_blank" rel="noopener noreferrer">DFCI News</a>!
+            </p>
+            <p>We have also published a
+              <a href="https://www.nature.com/articles/s41591-023-02501-6" target="_blank" rel="noopener noreferrer">Research Briefing</a> in Nature Medicine.
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">SurvLatent ODE: A Neural ODE based time-to-event model with competing risks for longitudinal data improves cancer-associated Venous Thromboembolism (VTE) prediction</span></p>
+            <p><span class="self-author">Intae Moon</span>, Stefan Groha, and Alexander Gusev</p>
+            <p>Proceedings of Machine Learning Research (PMLR), Machine Learning for Healthcare 2022:</p>
+            <p><a href="https://arxiv.org/abs/2204.09633" target="_blank" rel="noopener noreferrer">[manuscript]</a>,
+               <a href="https://github.com/itmoon7/survlatent_ode" target="_blank" rel="noopener noreferrer">[codes]</a></p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">Utilizing Electronic Health Records (EHR) and Tumor Panel Sequencing to Demystify Prognosis of Cancer of Unknown Primary (CUP) patients</span></p>
+            <p><span class="self-author">Intae Moon</span>, Sylvan C. Baca, Kenneth L. Kehl, and Alexander Gusev</p>
+            <p><a href="https://sail.health/index.html" target="_blank" rel="noopener noreferrer">Symposium on Artificial Intelligence for Learning Health Systems</a> (SAIL), 2022:
+              <a href="https://github.com/itmoon7/itmoon7.github.io/raw/main/assets/SAIL_abstract_final.pdf" target="_blank" rel="noopener noreferrer">[abstract]</a>
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">A high-performance 65 w universal ac-dc converter using a variable-inverter-rectifier-transformer with improved step-down capability</span></p>
+            <p><span class="self-author">Intae Moon</span>, Mike K. Ranjram, Sombuddha Chakraborty, and David J. Perreault</p>
+            <p>IEEE Energy Conversion Congress and Exposition (ECCE) 2019:
+              <a href="https://ieeexplore.ieee.org/abstract/document/8912821" target="_blank" rel="noopener noreferrer">[paper link]</a>
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">A wide operating range converter using a variable-inverter-rectifier-transformer with improved step-down capability</span></p>
+            <p><span class="self-author">Intae Moon</span>, Mike K. Ranjram, Sombuddha Chakraborty, and David J. Perreault</p>
+            <p>IEEE Applied Power Electronics Conference and Exposition (APEC) 2019:
+              <a href="https://ieeexplore.ieee.org/abstract/document/8721894" target="_blank" rel="noopener noreferrer">[paper link]</a>
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">Variable-inverter-rectifier-transformer: A hybrid electronic and magnetic structure enabling adjustable high step-down conversion ratios</span></p>
+            <p>Mike K. Ranjram, <span class="self-author">Intae Moon</span>, and David J. Perreault</p>
+            <p>IEEE Transactions on Power Electronics 2018:
+              <a href="https://ieeexplore.ieee.org/abstract/document/8264814" target="_blank" rel="noopener noreferrer">[paper link]</a>
+            </p>
+          </li>
+
+          <li class="pub">
+            <p><span class="pub-title">Design and implementation of a 1.3 kW, 7-level flying capacitor multilevel AC-DC converter with power factor correction</span></p>
+            <p><span class="self-author">Intae Moon</span>, Carl F Haken, Erik K Saathoff, Ethan Bian, Yutian Lei, Shibin Qin, Derek Chou, Steven Sedig, Won Ho Chung, and Robert CN Pilawa-Podgurski</p>
+            <p>IEEE Applied Power Electronics Conference and Exposition (APEC) 2017:
+              <a href="https://ieeexplore.ieee.org/abstract/document/7930674/" target="_blank" rel="noopener noreferrer">[paper link]</a>
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- TEACHING & AWARDS -->
+      <section id="teaching-awards" class="section container" aria-labelledby="teach-title">
+        <h2 id="teach-title">Teaching</h2>
+        <ul class="bulleted">
+          <li>
+            In Spring 2022, I taught
+            <a href="https://mlhcmit.github.io/2022/index.html" target="_blank" rel="noopener noreferrer">6.871 : Machine Learning for Healthcare</a>
+            at MIT as a teaching assistant. I created weekly recitation content and developed Python-based problem sets, in order to improve students' understanding of real-world healthcare applications of machine learning. I also coordinated collaborations between clinical researchers from MIT and Harvard, and students for course projects, and provided mentorship on student projects, leading to notable publications. I received the Carlton E. Tucker Award for Teaching Excellence (overall instructor rating: 6.8/7.0).
+          </li>
+          <li>
+            In Spring 2019, I was a TA for 6.004 : Computation Structures at MIT. I helped design and build new laboratory assignments and course materials in a RISC-V assembly and hardware description language called Bluespec.
+          </li>
+        </ul>
+
+        <h2>Awards</h2>
+        <ul class="bulleted">
+          <li>
+            <strong>Charles J. Epstein Trainee Awards for Excellence in Human Genetics Research</strong><br />
+            <em>Location:</em> American Society of Human Genetics (ASHG), Los Angeles, CA, August 2022<br />
+            <em>Details:</em> Predoctoral semifinalist; chosen as one of the 60 semi-finalists out of over 700 applicants.
+          </li>
+          <li>
+            <strong>Carlton E. Tucker Award for Teaching Excellence</strong><br />
+            <em>Location:</em> MIT Electrical Engineering and Computer Science, Cambridge, MA, June 2022<br />
+            <em>Details:</em> Annual department teaching award.
+          </li>
+          <li>
+            <strong><a href="https://ece.illinois.edu/newsroom/article/19407" target="_blank" rel="noopener noreferrer">Best Innovation Award</a></strong><br />
+            <em>Location:</em> IEEE International Future Energy Challenge, National Taiwan University, Taipei, Taiwan, July 2016<br />
+            <em>Details:</em> Team Leader; led the team of undergraduate students to design and build a successful 1.3 kW power converter for an efficient data center power delivery architecture.
+          </li>
+        </ul>
+      </section>
+
+      <!-- OUTSIDE THE LAB (fill as you like) -->
+      <section id="outside" class="section container" aria-labelledby="outside-title">
+        <h2 id="outside-title">Outside the lab</h2>
+        <p><!-- Add your hobbies/interests/travel/sports content here. --></p>
+      </section>
+    </main>
+  </body>
 </html>
