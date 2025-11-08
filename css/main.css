@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -17,9 +18,11 @@ html {
 body {
   margin: 0;
   color: #333;
-  font-size: 16px;
+  font-size: clamp(16px, 1.1vw + 14px, 18px); /* responsive base size */
   line-height: 1.6;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* ---------- Links */
@@ -67,6 +70,13 @@ h2 { margin-top: 8px; }
   display: inline-block;
   padding: 8px 0;
   font-weight: 600;
+}
+
+/* Tiny-screen nav: allow horizontal scrolling instead of wrapping */
+@media (max-width: 480px) {
+  .site-header .container { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  .nav-list { white-space: nowrap; gap: 16px; }
+  .nav-list::-webkit-scrollbar { display: none; }
 }
 
 /* ---------- Skip link (keyboard users) */
@@ -120,7 +130,8 @@ h2 { margin-top: 8px; }
   align-items: center;
   gap: 6px;
 }
-.social img { display: block; }
+.social img,
+.icon-img { display: block; }
 
 /* ---------- Lists / Publications / Updates */
 .bulleted { padding-left: 1.25rem; }
